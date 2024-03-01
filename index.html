@@ -1,0 +1,90 @@
+!<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <!-- Form nhap thong tin sinh vien -->
+                <h3 class="display-4 text-center">Quản lí sinh viên</h3>
+                <div class="form_group">
+                    <p>Mã Sinh Viên</p>
+                    <input id="maSinhVien" class="form-control">
+                    
+                </div>
+                <div class="form_group">
+                    <p>Tên Sinh Viên</p>
+                    <input id="tenSinhVien" class="form-control">
+                    
+                </div>
+                <div class="form_group">
+                    <p>Loại Sinh Viên</p>
+                    <select  id="loaiSinhVien" class="form-control ">
+                        <span id="error_maSinhVien_required"class="text text-danger"></span>
+                        <option >Khó khăn</option>
+                        <option >Bình thường</option>
+                        
+                    </select>
+                </div>
+                <div class="form_group">
+                    <div class="row">
+                        <div class="col-3">
+                            <p>Điểm toán</p>
+                            <input id="diemToan" class="form-control">
+                            
+                        </div>
+                        <div class="col-6">
+                            <p>Điểm lý</p>
+                            <input id="diemLy" class="form-control">
+                            
+                        </div>
+                        <div class="col-3">
+                            <p>Điểm hóa</p>
+                            <input id="diemHoa" class="form-control">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <p>Điểm rèn luyện</p>
+                    <input id="diemRenLuyen" class="form-control">
+                    
+                </div>
+                <div class="form-group text-center mt-3">
+                    <button class="btn btn-success " id="btnXacNhan" >Xác nhận</button>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <!-- Hien thi thong tin sinh vien -->
+                <h3 class="text-center display-4">Thông tin sinh viên</h3>
+                <p>Tên sinh viên : <span id="txtTenSinhVien" style="font-weight: bold;"></span>
+                </p>
+                <p>Mã sinh viên : <span id="txtMaSinhVien" style="font-weight: bold;"></span>
+                </p>
+                <p>Loại sinh viên : <span id="txtLoaiSinhVien" style="font-weight: bold;"></span>
+                </p>
+                <p>Điểm trung bình : <span id="txtDiemTrungBinh" style="font-weight: bold;"></span>
+                </p>
+                <p>Xếp loại : <span id="txtXepLoai" style="font-weight: bold;"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
